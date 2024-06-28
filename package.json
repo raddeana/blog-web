@@ -5,7 +5,7 @@
     "scripts": {
         "changeset": "changeset",
         "clean": "pnpm rimraf node_modules && pnpm rimraf lib",
-        "build:pkg": "pnpm --filter .packages/** build",
+        "build-pkg": "pnpm --filter .packages/** build",
         "ver": "pnpm changeset version"
     },
     "devDependencies": {
