@@ -1,0 +1,15 @@
+
+.DS_store
+
+node_modules
+dist
+lib
+
+.idea
+dist
+.vscode
+webstorm.config.js
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -1,0 +1,14 @@
+{
+    "name": "blog",
+    "version": "0.0.1",
+    "homepage": "https://github.com/raddeana/blog-web",
+    "scripts": {
+        "changeset": "changeset",
+        "clean": "pnpm rimraf node_modules && pnpm rimraf lib",
+        "build:pkg": "pnpm --filter .packages/** build",
+        "ver": "pnpm changeset version"
+    },
+    "devDependencies": {
+        "@changesets/cli": "latest"
+    }
+}
