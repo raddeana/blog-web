@@ -1,8 +1,15 @@
 {
     "name": "blog",
     "version": "0.0.1",
-    "homepage": "https://github.com/raddeana/blog-web",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/raddeana/blog-web.git"
+    },
+    "private": true,
+    "type": "module",
     "scripts": {
+        "dev-admin": "pnpm -F @blog/admin dev",
+        "dev-web": "pnpm -F @blog/web dev",
         "clean": "pnpm rimraf node_modules && pnpm rimraf lib",
         "build-pkg": "pnpm --filter .packages/** build",
         "ver": "pnpm changeset version"
