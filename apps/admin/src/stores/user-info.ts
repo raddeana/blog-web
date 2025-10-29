@@ -3,20 +3,22 @@ import { defineStore } from 'pinia';
 export const useCounterStore = defineStore('userInfo', {
   state: () => {
     return {
-        token: '',
-        name: '',
-        avatar: '',
+      token: '',
+      userInfo: {},
     };
   },
   actions: {
+    /**
+     * 更新token
+     */
     updateToken (token: string) {
       this.token = token;
     },
-    updateName (name: string) {
-      this.name = name;
-    },
-    updateAvatar (avatar: string) {
-      this.avatar  = avatar;
+    /**
+     * 更新用户信息
+     */
+    updateUserInfo (userInfo: object) {
+      this.userInfo  = userInfo;
     },
   },
 });
