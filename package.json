@@ -16,5 +16,8 @@
     },
     "devDependencies": {
         "@changesets/cli": "latest"
+    },
+    "engines": {
+        "node": ">=22.12.0"
     }
 }

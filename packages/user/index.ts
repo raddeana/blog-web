@@ -1,4 +1,5 @@
 export * from './apis/user';
-export ModifyPasswordModal from './components/modify-password-modal';
-export LoginPage from './views/login.vue';
-export RegisterPage from './views/register.vue';
+export { useUserStore } from './stores/user';
+export { default as LoginPage } from './views/login.vue';
+export { default as RegisterPage } from './views/register.vue';
+export { default as ModifyPasswordPage } from './views/modify-password.vue';
